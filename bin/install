@@ -58,7 +58,7 @@ get_filename() {
   local version_short
   version_short=$(echo "$version" | tr -d "v")
 
-  echo "${binary_name}_${platform}_${version_short}.tar.gz"
+  echo "${binary_name}_${version_short}_${platform}.tar.gz"
 }
 
 # https://github.com/fluxcd/toolkit/releases/download/v0.0.26/gotk_0.0.26_linux_amd64.tar.gz
